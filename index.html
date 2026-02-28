@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sadik Mohammed — Data & Software Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#skills" onclick="closeMenu()">Compétences</a>
+  <a href="#projects" onclick="closeMenu()">Projets</a>
+  <a href="#parcours" onclick="closeMenu()">Parcours</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+
+<nav id="navbar">
+  <div class="logo">SADIK<em> MOHAMMED</em></div>
+  <ul class="nav-links">
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="burger" id="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+
+    <div class="hero-left">
+      <div class="eyebrow"><span class="eyebrow-dot"></span>Étudiant Ingénieur · Data & Software</div>
+      <h1>
+        <span class="first">Sadik</span>
+        <span class="last">Mohammed</span>
+      </h1>
+      <p class="tagline">
+        Étudiant en 1ère année Cycle Ingénieur en <strong>Informatique & Sciences des Données</strong> à l'ENSA Khouribga. Passionné par le Machine Learning et le développement logiciel.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">Voir mes projets →</a>
+        <a href="assets/sadik-mohammed.pdf" download class="btn btn-outline">⬇ Télécharger CV</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">+3</div>
+          <div class="stat-label">Projets Data/ML</div>
+        </div>
+        <div>
+          <div class="stat-num">1</div>
+          <div class="stat-label">Stage Frontend</div>
+        </div>
+        <div>
+          <div class="stat-num">4</div>
+          <div class="stat-label">Langues</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="photo-circle" id="photoCircle">
+        <img src="assets/cv_img.png" alt="">
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="skills-section" id="skills">
+  <div class="sec-eyebrow"><span class="sec-tag">01 — Compétences</span><div class="sec-line"></div></div>
+  <h2>Compétences Techniques</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-name">Python & Data Science</div>
+      <div class="skill-desc">Analyse, manipulation et visualisation de données.</div>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">NumPy</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">Matplotlib</span>
+        <span class="tag">Seaborn</span>
+        <span class="tag">Scikit-learn</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">Machine Learning</div>
+      <div class="skill-desc">Classification, régression,NLP.</div>
+      <div class="tags">
+        <span class="tag">SVM</span>
+        <span class="tag">Regression Linéaire</span>
+        <span class="tag">Logistic Regression</span>
+        <span class="tag">TF-IDF</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">Scikit-learn</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">Développement Web</div>
+      <div class="skill-desc">Interfaces web responsives et applications full-stack.</div>
+      <div class="tags">
+        <span class="tag blue">Java</span>
+        <span class="tag blue">HTML</span>
+        <span class="tag blue">CSS</span>
+        <span class="tag blue">JavaScript</span>
+        <span class="tag blue">Bootstrap</span>
+        <span class="tag blue">PHP</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">Bases de données & BI</div>
+      <div class="skill-desc">Conception de BDD relationnelles, requêtes SQL avancées et dashboards Power BI.</div>
+      <div class="tags">
+        <span class="tag amber">SQL</span>
+        <span class="tag amber">MySQL</span>
+        <span class="tag amber">Power BI</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">Outils & Collaboration</div>
+      <div class="skill-desc">Versionning de code et environnements de développement.</div>
+      <div class="tags">
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">MS Office</span>
+        <span class="tag">Jupyter</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" style="background:var(--bg);">
+  <div class="sec-eyebrow"><span class="sec-tag">02 — Projets</span><div class="sec-line"></div></div>
+  <h2>Projets Réalisés</h2>
+  <div class="projects-grid">
+
+    <div class="proj-card">
+      <a href="https://github.com/Mohammed-Sadik27/Job_recommender" class="proj-link">↗</a>
+      <div class="proj-num">PROJET 01</div>
+      <div class="proj-title">Recommandation d'Offres d'Emploi par CV</div>
+      <div class="proj-desc">
+        Système intelligent qui analyse automatiquement un CV, extrait les compétences clés via un 
+        <strong style="color:var(--text)">LLM (Groq)</strong>, puis scrape les offres d'emploi 
+        correspondantes sur <strong style="color:var(--text)">Rekrute.com</strong> via l'API Apify.
+      </div>
+      <div class="proj-stack">
+        <span class="tag blue">Python</span>
+        <span class="tag blue">Groq API</span>
+        <span class="tag blue">Apify</span>
+        <span class="tag blue">NLP</span>
+        <span class="tag blue">Streamlit</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <a href="https://github.com/Mohammed-Sadik27/diabetePrediction" class="proj-link">↗</a>
+      <div class="proj-num">PROJET 02</div>
+      <div class="proj-title">Prédiction du Diabète</div>
+      <div class="proj-desc">
+        Modèle de classification SVM pour prédire le diabète à partir de données médicales.
+      </div>
+      <div class="proj-stack">
+        <span class="tag">Python</span>
+        <span class="tag">SVM</span>
+        <span class="tag">Scikit-learn</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">Pandas</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <a href="https://github.com/Mohammed-Sadik27/spam_email_detector" class="proj-link">↗</a>
+      <div class="proj-num">PROJET 03</div>
+      <div class="proj-title">Détection de Spam Email</div>
+      <div class="proj-desc">
+        Modèle de régression logistique pour classifier les emails comme spam ou non-spam. Vectorisation du texte par TF-IDF.
+      </div>
+      <div class="proj-stack">
+        <span class="tag">Python</span>
+        <span class="tag">Logistic Regression</span>
+        <span class="tag">TF-IDF</span>
+        <span class="tag">NLP</span>
+        <span class="tag">Streamlit</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <a href="https://github.com/Mohammed-Sadik27/Gestion_Transport" class="proj-link">↗</a>
+      <div class="proj-num">PROJET 04</div>
+      <div class="proj-title">Gestion Transport Scolaire</div>
+      <div class="proj-desc">
+        Système web complet pour gérer élèves, trajets, bus et paiements. Interface responsive et intuitive avec HTML, CSS, Bootstrap et JavaScript. Base de données MySQL pour stocker et gérer toutes les informations.
+      </div>
+      <div class="proj-stack">
+        <span class="tag blue">PHP</span>
+        <span class="tag blue">MySQL</span>
+        <span class="tag blue">HTML/CSS</span>
+        <span class="tag blue">Bootstrap</span>
+        <span class="tag blue">JavaScript</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="parcours" style="background:var(--bg2);">
+  <div class="sec-eyebrow"><span class="sec-tag">03 — Parcours</span><div class="sec-line"></div></div>
+  <h2>Formation & Expérience</h2>
+
+  <div class="timeline-grid">
+    <div>
+      <h3 style="font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;">Formation</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2025 — Présent</div>
+          <div class="tl-title">Cycle Ingénieur — Informatique & Data</div>
+          <div class="tl-sub">ENSA Khouribga</div>
+          <div class="tl-desc">Cycle d'ingénierie en informatique et ingénierie des données.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2023 — 2025</div>
+          <div class="tl-title">Classes Préparatoires Intégrées</div>
+          <div class="tl-sub">ENSA Khouribga</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2022 — 2023</div>
+          <div class="tl-title">Baccalauréat — Sciences Physiques</div>
+          <div class="tl-sub">Lycée Boumalne Dades</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;">Expérience</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">Août 2025</div>
+          <div class="tl-title">Stage — Développement Frontend</div>
+          <div class="tl-sub">CodeAlpha · Remote</div>
+          <div class="tl-desc">Réalisation de 3 projets web complets. Développement avec HTML, CSS, JavaScript et Bootstrap. Acquisition de compétences pratiques en design et développement frontend.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2025</div>
+          <div class="tl-title">Chef de Projet — Guiding Stars</div>
+          <div class="tl-sub">Club EPIC · ENSA Khouribga</div>
+          <div class="tl-desc">Pilotage d'un projet associatif au sein du club EPIC. Leadership, gestion d'équipe.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2025</div>
+          <div class="tl-title">Équipe organisatrice — DATAVERSE 4.0</div>
+          <div class="tl-sub">ENSA Khouribga</div>
+          <div class="tl-desc">Membre de l'équipe organisatrice de l'événement DATAVERSE 4.0, événement dédié à la data science et l'intelligence artificielle.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="extras-grid">
+    <div class="extras-block">
+      <h3>Certifications</h3>
+      <div class="extra-item">
+        <div class="ei">🏅</div>
+        <div><strong>Elements of AI</strong><br><span style="font-size:.72rem;color:var(--muted);">University of Helsinki</span></div>
+      </div>
+      <div class="extra-item">
+        <div class="ei">🏅</div>
+        <div><strong>Learn SQL / MySQL</strong><br><span style="font-size:.72rem;color:var(--muted);">Udemy</span></div>
+      </div>
+      <div class="extra-item">
+        <div class="ei">🏅</div>
+        <div><strong>Google AI Essentials</strong><br><span style="font-size:.72rem;color:var(--muted);">Coursera</span></div>
+      </div>
+    </div>
+    <div class="extras-block">
+      <h3>Langues</h3>
+      <div class="lang-row">
+        <div class="lang-pill">Français <span class="lv">· Avancé</span></div>
+        <div class="lang-pill">Anglais <span class="lv">· Intermédiaire</span></div>
+        <div class="lang-pill">Arabe <span class="lv">· Natif</span></div>
+        <div class="lang-pill">Amazigh <span class="lv">· Natif</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="sec-eyebrow"><span class="sec-tag">04 — Contact</span><div class="sec-line"></div></div>
+  <h2>CONTACT</h2>
+  <div class="contact-inner">
+    <div>
+      <p style="color:var(--muted);line-height:1.7;font-size:.88rem;margin-bottom:.5rem;">
+        Disponible pour des stages et des opportunités. N'hésitez pas à me contacter !
+      </p>
+      <div class="contact-links">
+        <a href="mailto:medsadik836@gmail.com" class="c-link">
+          <span class="ci"><img src="assets/gmail.png" alt="" style="width: 30px;height: 30px;margin-right: 10px;display: inline-block;"></span> medsadik836@gmail.com
+        </a>
+        <a href="tel:+212648607286" class="c-link">
+          <span class="ci">📞</span> +212 648 607 286
+        </a>
+        <a href="https://github.com/Mohammed-Sadik27" class="c-link" target="_blank">
+          <span class="ci"><img src="assets/github.png" alt="" style="width: 30px;height: 30px;margin-right: 10px;display: inline-block;"></span> https://github.com/Mohammed-Sadik27
+        </a>
+        <a href="https://www.linkedin.com/in/mohammed-sadik-1175b12b2" class="c-link" target="_blank">
+          <span class="ci"><img src="assets/linkedin.png" alt="" style="width: 30px;height: 30px;margin-right: 10px;display: inline-block;"></span> https://www.linkedin.com/in/mohammed-sadik
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="1ba908ba-47de-4a77-85f6-614433a554d4">
+        <input type="hidden" name="subject" value="Nouveau message — Portfolio Sadik Mohammed">
+        <div class="fg">
+          <label>Nom complet</label>
+          <input type="text" name="name" placeholder="Votre nom" required>
+        </div>
+        <div class="fg">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="votre@email.com" required>
+        </div>
+        <div class="fg">
+          <label>Message</label>
+          <textarea name="message" placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+          Envoyer
+        </button>
+
+    </form>
+  </div>
+</section>
+<footer>
+  <p>© 2025 <span class="acc">CREATED By Sadik Mohammed</span> — Data & Software Engineer · ENSA Khouribga</p>
+  <a href="#home" class="scroll-top">↑</a>
+</footer>
+
+<script src="script.js">
+</script>
+</body>
+</html>
