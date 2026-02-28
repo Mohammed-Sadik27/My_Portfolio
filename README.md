@@ -1,5 +1,5 @@
 # Personal Portfolio
-This Project is a Personal Portfolio wevsite built with HTML,CSS and Javascript.it showcases my skills ,projects ,resume and contact information in clean , modern and responsive design.
+This Project is a Personal Portfolio website built with HTML,CSS and Javascript.it showcases my skills ,projects ,resume and contact information in clean , modern and responsive design.
 
 # Features 
 - Clear and professional presentation of my personal profile
